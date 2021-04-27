@@ -1,0 +1,88 @@
+/* .navbtn {
+    width: 200px;
+    height: 150px;
+    background-color: teal;
+    color: teal;
+} */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button {
+    color: whitesmoke;
+    background-color: teal;
+    display: inline-block;
+}
+
+.col {
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+}
+
+.row {
+    padding: 10px;
+    border: 3px solid orange;
+}
+
+@media only screen and (max-width : 480px){
+    .sm-4 {
+        width: 100%;
+        
+    }
+}
+
+@media only screen and (min-width : 481px){
+    .med-2 {
+        width: 49%;
+        
+    }
+}
+
+@media only screen and (min-width : 1024px){
+    .lg-1 {
+        width: 24%;
+        
+    }
+    .lg-3 {
+        width: 75%;
+    }
+}
+
+
+/* @media only screen and (max-width: 480px){
+    .navbtn {
+        background-color: yellow;
+    }
+}
+@media only screen and (min-width: 481px){
+    .navbtn {
+        background-color: blue;
+    }
+}
+@media only screen and (min-width: 1024px){
+    .navbtn {
+        background-color: red;
+    }
+} */
+
+
+/* Goals
+desktop     all four buttons in a line
+tablet      two buttons per line
+phone       give each button a line*/
+
+/* media query
+    screen =< 480px
+        define .sm-4 width 100%
+    screen > 480px
+        define .med-2 width 50%
+    screen >= 1024px
+        define .lg-1 width 25% */
+
+/* NOTES
+Media inquiry widths in percentages are surprisingly exact.
+Input one point below your expected size. (24% instead of 25%)
+Better yet, look smart and consider: calc (25% - 10px) */
